@@ -1,92 +1,132 @@
 # Sudy - Gelişmiş ve Verimli Türkçe LLM Kontrol Merkezi
 
 <p align="center">
-  <b>Gelişmiş MoE ve MLA mimari yeniliklerini Türkçe doğal dil işleme optimizasyonlarıyla buluşturan yüksek performanslı dil modeli projesi.</b>
+  <b>MLA · MoE · MTP — Türkçe doğal dil işleme için optimize edilmiş, düşük VRAM tüketimiyle yüksek performanslı açık kaynak dil modeli.</b>
+</p>
+
+<p align="center">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python">
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-2.0%2B-orange?logo=pytorch">
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0.95%2B-green?logo=fastapi">
+  <img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue">
 </p>
 
 ---
 
-## 📋 Proje Hakkında
-Sudy, **hesaplama verimliliği, ölçeklenebilirlik ve Türkçe dil optimizasyonuna** odaklanarak sıfırdan tasarlanan açık kaynaklı bir Türkçe Büyük Dil Modeli (LLM) geliştirme projesidir. GPT-4 seviyesindeki performansı daha düşük maliyet ve yüksek bellek tasarrufuyla elde etmek için yenilikçi model mimarilerini (MLA, MoE, MTP) temel alır.
-
-### 🚀 Temel Özellikler
-*   **Çok Başlı Gizli Dikkat (MLA)**: KV (Key-Value) önbelleğini gizli bir uzaya sıkıştırarak çıkarım sırasında bellek kullanımını standart dikkat mekanizmalarına göre **~%90 azaltır**.
-*   **Uzman Karışımı (MoE)**: Aktif uzmanlar ile her zaman çalışan paylaşılan uzmanları bir araya getiren seyrek mimari (Sparse MoE) sayesinde yüksek kapasiteyi düşük hesaplama maliyetiyle sunar.
-*   **Çoklu-Token Tahmini (MTP)**: Sıralı veya paralel tahmin başlıkları yardımıyla modelin gelecekteki token temsillerini öğrenme yeteneğini geliştirir.
-*   **GRPO (Group Relative Policy Optimization)**: Harici bir eleştirmen (critic) modeline gerek duymayan, grup içi çıktıların bağıl puanlamasıyla çalışan verimli pekiştirmeli öğrenme (RLHF) algoritması.
-*   **Türkçe NLP Optimizasyonu**: Türkçe morfolojisine, ek yapılarına ve özel karakterlerine duyarlı BPE tokenizer ve veri ön işleme araçları.
-
----
-
-## 📂 Depo Yapısı
-```text
-Sudy/
-├── src/
-│   ├── model/           # MLA, MoE, MTP mimari implementasyonları, tokenizer
-│   ├── training/        # Pretrain, SFT, GRPO RLHF antrenman kodları
-│   └── inference/       # FastAPI API sunucusu, batch çıkarım araçları
-├── configs/             # YAML tabanlı model ve eğitim yapılandırmaları
-├── scripts/             # Veri indirme, ön işleme, tokenizer eğitme betikleri
-├── tests/               # pytest birim testleri
-├── docs/                # Detaylı mimari, eğitim ve dağıtım kılavuzları
-├── docker/              # Dockerfile ve docker-compose yapılandırması
-└── README.md
-```
-
----
-
-## 🛠️ Kurulum
-
-Yerel ortamda Sudy projesini kurmak için aşağıdaki adımları takip edebilirsiniz:
+## Hızlı Başlangıç
 
 ```bash
-# Depoyu klonlayın ve içine girin
-cd postercp
+# 1. Depoyu klonlayın
+git clone https://github.com/Emryshi/sudy-ai.git
+cd sudy-ai
 
-# Bağımlılıkları kurun
+# 2. Bağımlılıkları kurun
 pip install -e .
-```
 
----
-
-## 📊 Çalıştırma ve Eğitim
-
-Hızlıca örnek bir eğitim ve API başlatma süreci çalıştırmak için:
-
-```bash
-# 1. Örnek Türkçe veri kümesi oluşturun ve temizleyin
-python scripts/download_data.py --source sample
-python scripts/preprocess_data.py --input ./data/raw/turkish_sample.txt --output ./data/processed/turkish_processed.txt --deduplicate
-
-# 2. Tokenizer'ı eğitin
-python scripts/train_tokenizer.py --data_file ./data/processed/turkish_processed.txt --output_dir ./checkpoints/sudy-tokenizer --vocab_size 1000
-
-# 3. Ön eğitimi (Pretraining) başlatın
-python src/training/pretrain.py --config ./configs/pretrain.yaml --tokenizer_path ./checkpoints/sudy-tokenizer --data_path ./data/processed/turkish_processed.txt --output_dir ./checkpoints/sudy-pretrain --epochs 2 --batch_size 2
-
-# 4. Denetimli İnce Ayarı (SFT) başlatın
-python src/training/sft.py --config ./configs/sft.yaml --tokenizer_path ./checkpoints/sudy-tokenizer --pretrain_checkpoint ./checkpoints/sudy-pretrain/model.pt --output_dir ./checkpoints/sudy-sft --epochs 2 --batch_size 2
-
-# 5. GRPO RLHF hizalamasını başlatın
-python src/training/rlhf.py --config ./configs/rlhf.yaml --tokenizer_path ./checkpoints/sudy-tokenizer --sft_checkpoint ./checkpoints/sudy-sft/model.pt --output_dir ./checkpoints/sudy-rlhf --epochs 1 --batch_size 2
-```
-
----
-
-## 🌐 API Sunucusu
-
-Eğitilen modelinizi FastAPI ile yayına almak için:
-
-```bash
-# Yönetim panelini ve API sunucusunu başlatın
+# 3. Tokenizer eğitin ve web panelini başlatın
+python manage.py setup
 python manage.py ui
 ```
 
+Tarayıcınızda **http://localhost:8000** adresine giderek kontrol paneline erişebilirsiniz.
+
 ---
 
-## 🧪 Testlerin Çalıştırılması
+## Proje Hakkında
 
-Tüm birim testleri (unit tests) çalıştırmak için:
+Sudy, **hesaplama verimliliği, ölçeklenebilirlik ve Türkçe dil optimizasyonuna** odaklanarak sıfırdan tasarlanan açık kaynaklı bir Türkçe Büyük Dil Modeli (LLM) geliştirme çerçevesidir.
+
+### Temel Özellikler
+
+| Özellik | Açıklama |
+|---|---|
+| **MLA (Çok Başlı Gizli Dikkat)** | KV önbelleğini gizli uzaya sıkıştırarak çıkarım belleğini **~%90 azaltır** |
+| **MoE (Uzman Karışımı)** | Türkçe morfolojisine duyarlı yönlendirici ile her token için top-k uzman seçer |
+| **MTP (Çoklu-Token Tahmini)** | Bir forward pass'te birden fazla token üreterek çıkarım hızını **2x artırır** |
+| **GRPO RLHF** | Harici critic modeli gerektirmeden grup-içi bağıl politika optimizasyonu |
+| **Web Arama (RAG)** | DuckDuckGo üzerinden gerçek zamanlı bilgi çekimi ve bağlam sıkıştırma |
+| **Otonom Crawler** | Belirtilen URL'leri derinlemesine gezerek kendi kendine veri toplar |
+
+---
+
+## Depo Yapısı
+
+```text
+sudy-ai/
+├── src/
+│   ├── model/           # MLA, MoE, MTP mimari implementasyonları ve tokenizer
+│   ├── training/        # Pretrain, SFT, GRPO RLHF eğitim betikleri
+│   └── inference/       # FastAPI API sunucusu, güvenlik katmanı, web arama
+├── configs/             # YAML tabanlı model konfigürasyonları
+│   ├── pretrain.yaml    # Test / hızlı eğitim (küçük boyut)
+│   └── model_full.yaml  # Üretim modeli (1B+ parametre)
+├── scripts/             # Veri indirme, crawling, HuggingFace downloader
+├── tests/               # 23 adet pytest birim testi
+├── docs/                # Detaylı kılavuzlar
+└── docker/              # CUDA destekli Dockerfile ve GPU compose
+```
+
+---
+
+## Kurulum ve Eğitim
+
+```bash
+# Tokenizer eğitimi
+python manage.py setup --vocab_size 8000
+
+# Ön eğitim (Pretraining)
+python manage.py pretrain --epochs 3 --batch_size 4
+
+# Denetimli ince ayar (SFT)
+python manage.py sft --epochs 2
+
+# GRPO RLHF hizalaması
+python manage.py rlhf --epochs 1
+```
+
+### HuggingFace'den Veri Kümesi İndirme
+
+Web panelindeki **"Veri Kümeleri"** sekmesinden HuggingFace Hub'daki herhangi bir veri kümesini doğrudan indirebilirsiniz. Örnek:
+
+```
+Repo ID: boun-tabi-LMG/turkish-instructions
+Split:   train
+```
+
+---
+
+## Web Paneli
+
+```bash
+python manage.py ui   # http://localhost:8000
+```
+
+- **Sohbet:** Gerçek zamanlı streaming yanıtlar, web arama (RAG) modu
+- **Veri Kümeleri:** CSV/JSON yükleme, HuggingFace indirici, içerik önizleme
+- **Model Eğitimi:** Tüm eğitim aşamalarını canlı log konsoluyla başlatma
+- **Birim Testleri:** pytest'i tek tıkla çalıştırma
+
+---
+
+## Docker ile Çalıştırma
+
+```bash
+# CPU modu
+docker-compose -f docker/docker-compose.yml up --build
+
+# GPU modu (NVIDIA Container Toolkit gerekli)
+docker-compose -f docker/docker-compose.yml up --build
+# docker-compose.yml içindeki deploy.resources bloğu GPU'yu otomatik aktifleştirir
+```
+
+---
+
+## Testlerin Çalıştırılması
+
 ```bash
 python manage.py test
+# veya doğrudan:
+pytest tests/ -v
 ```
+
+23 birim testi: model mimarisi, tokenizer, MLA dikkat mekanizması, MoE yük dengeleme, RLHF, API uç noktaları.

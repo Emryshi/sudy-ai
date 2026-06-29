@@ -1,5 +1,6 @@
 import os
 import torch
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException, File, UploadFile, Query
 from fastapi.responses import StreamingResponse, HTMLResponse
 from pydantic import BaseModel, Field
@@ -16,12 +17,6 @@ from typing import Optional
 from src.model import SudyConfig, SudyLMHeadModel, SudyTokenizer
 from src.inference.search_utils import WebSearcher, ContextCompressor
 from src.inference.safety import SafetyGuardrail
-
-app = FastAPI(
-    title="Sudy Inference & Control API",
-    description="Gelişmiş MoE ve MLA Mimari Yapısına Sahip Türkçe LLM Çıkarım ve Yönetim Sunucusu",
-    version="0.2.0"
-)
 
 # Load configuration and models
 MODEL_PATH = os.getenv("MODEL_PATH", "./checkpoints/sudy-sft")
@@ -41,8 +36,9 @@ active_task = None
 process_logs = []
 log_lock = threading.Lock()
 
-@app.on_event("startup")
-def startup_event():
+
+def _load_model_and_tokenizer():
+    """Loads tokenizer and model into global state at startup."""
     global model, tokenizer, device
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Starting API. Using device: {device}")
@@ -61,7 +57,7 @@ def startup_event():
         config = SudyConfig.from_pretrained(MODEL_PATH)
         config.vocab_size = tokenizer.get_vocab_size()
         model = SudyLMHeadModel(config)
-        
+
         # Load weights
         weights_file = os.path.join(MODEL_PATH, "model.pt")
         if os.path.exists(weights_file):
@@ -83,6 +79,25 @@ def startup_event():
         model = SudyLMHeadModel(config)
         model.to(device)
         model.eval()
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Modern FastAPI lifespan handler (replaces deprecated on_event)."""
+    _load_model_and_tokenizer()
+    yield
+    # Shutdown: cleanup if needed
+    global model, tokenizer
+    model = None
+    tokenizer = None
+
+
+app = FastAPI(
+    title="Sudy Inference & Control API",
+    description="Gelişmiş MoE ve MLA Mimari Yapısına Sahip Türkçe LLM Çıkarım ve Yönetim Sunucusu",
+    version="0.2.0",
+    lifespan=lifespan
+)
 
 
 # ---------------------------------------------------------

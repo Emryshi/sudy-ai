@@ -1,0 +1,18 @@
+# Sudy LLM - Tam Model Konfigürasyonu (Üretim / Production)
+# Bu ayarlar gerçek eğitim için kullanılır.
+# Test için configs/pretrain.yaml kullanın (daha küçük boyut).
+
+# --- Model Mimarisi ---
+hidden_size: 1024
+num_hidden_layers: 16
+num_attention_heads: 16
+d_latent: 256           # MLA: KV sıkıştırma boyutu (~%75 VRAM tasarrufu)
+num_experts: 16          # MoE: Toplam uzman sayısı
+num_shared_experts: 2    # Her zaman aktif olan paylaşımlı uzmanlar
+top_k: 2                 # Her token için aktifleştirilen uzman sayısı
+num_mtp_heads: 2         # Çoklu-token tahmin başlığı sayısı
+max_position_embeddings: 4096
+initializer_range: 0.02
+rms_norm_eps: 1.0e-6
+moe_aux_loss_coef: 0.001
+rope_theta: 10000.0
