@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  sudy-api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../checkpoints:/app/checkpoints
+      - ../data:/app/data
+    environment:
+      - MODEL_PATH=/app/checkpoints/sudy-sft
+      - TOKENIZER_PATH=/app/checkpoints/sudy-tokenizer
+      - PORT=8000
+      - HOST=0.0.0.0
+    restart: always

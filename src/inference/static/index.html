@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudy AI - Kontrol Merkezi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0d19;
+            --sidebar-color: #0f1123;
+            --card-color: #161930;
+            --primary-color: #6366f1;
+            --primary-hover: #4f46e5;
+            --secondary-color: #a855f7;
+            --text-color: #e5e7eb;
+            --text-muted: #9ca3af;
+            --border-color: #2a2e56;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --input-bg: #090a14;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            font-size: 13px;
+        }
+
+        /* Sidebar Menu Layout */
+        .sidebar {
+            width: 240px;
+            background-color: var(--sidebar-color);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            padding: 20px 16px;
+            transition: width 0.3s ease, padding 0.3s ease, border-color 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .sidebar.collapsed {
+            width: 0;
+            padding: 0;
+            border-right: none;
+            overflow: hidden;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .brand-logo {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            color: #ffffff;
+            box-shadow: 0 0 12px rgba(99, 102, 241, 0.3);
+        }
+
+        .brand-title {
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            background: linear-gradient(to right, #ffffff, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            flex-grow: 1;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            color: #ffffff;
+            background-color: rgba(99, 102, 241, 0.06);
+        }
+
+        .nav-item.active {
+            border-left: 3px solid var(--primary-color);
+            background-color: rgba(99, 102, 241, 0.1);
+        }
+
+        .sidebar-footer {
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+            font-size: 11px;
+            color: var(--text-muted);
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* Main Screen Layout */
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            background-color: var(--bg-color);
+        }
+
+        .main-header {
+            height: 60px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            background-color: rgba(15, 17, 35, 0.3);
+            backdrop-filter: blur(12px);
+            z-index: 10;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            background-color: rgba(16, 185, 129, 0.06);
+            border: 1px solid rgba(16, 185, 129, 0.15);
+            border-radius: 20px;
+            color: var(--success-color);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--success-color);
+            border-radius: 50%;
+            animation: pulse-dot 1.8s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0% { transform: scale(0.85); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.85); opacity: 0.5; }
+        }
+
+        /* Tabs Panels Container */
+        .panel {
+            display: none;
+            padding: 24px 30px;
+            height: calc(100vh - 60px);
+            overflow-y: auto;
+        }
+
+        .panel.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Generic Card Component */
+        .card {
+            background-color: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #ffffff;
+        }
+
+        /* Form elements & buttons styling */
+        .btn {
+            padding: 8px 16px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 13px;
+            transition: all 0.15s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            outline: none;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .btn-danger {
+            background-color: var(--danger-color);
+        }
+
+        .btn-danger:hover {
+            background-color: #dc2626;
+        }
+
+        .input-group {
+            margin-bottom: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .input-group label {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .input-control {
+            padding: 9px 12px;
+            background-color: var(--input-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-color);
+            outline: none;
+            font-family: inherit;
+            font-size: 13px;
+            transition: border-color 0.2s;
+        }
+
+        .input-control:focus {
+            border-color: var(--primary-color);
+        }
+
+        /* ---------------------------------------------------------
+           Yapay Zeka Chat UI Redesign
+           --------------------------------------------------------- */
+        .chat-container {
+            display: flex;
+            height: 100%;
+            gap: 24px;
+            overflow: hidden;
+        }
+
+        .chat-main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--sidebar-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            height: 100%;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-sidebar {
+            width: 280px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow-y: auto;
+            height: 100%;
+        }
+
+        .chat-window-header {
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border-color);
+            background-color: rgba(255, 255, 255, 0.01);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-window-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .chat-messages {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .message-bubble {
+            max-width: 85%;
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-size: 13px;
+            line-height: 1.5;
+            word-wrap: break-word;
+            animation: slide-in 0.2s ease-out;
+        }
+
+        @keyframes slide-in {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message-bubble.user {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #4338ca 100%);
+            color: #ffffff;
+            align-self: flex-end;
+            border-bottom-right-radius: 2px;
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2);
+        }
+
+        .message-bubble.assistant {
+            background-color: var(--card-color);
+            color: var(--text-color);
+            align-self: flex-start;
+            border-bottom-left-radius: 2px;
+            border: 1px solid var(--border-color);
+        }
+
+        .message-bubble.error {
+            background-color: rgba(239, 68, 68, 0.06);
+            color: var(--danger-color);
+            border: 1px solid rgba(239, 68, 68, 0.15);
+            align-self: center;
+            border-radius: 6px;
+        }
+
+        /* Quick Starters */
+        .quick-starters-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: auto auto;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .quick-starter-card {
+            background-color: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 16px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            text-align: center;
+        }
+
+        .quick-starter-card:hover {
+            border-color: var(--primary-color);
+            background-color: rgba(99, 102, 241, 0.02);
+            transform: translateY(-1px);
+        }
+
+        .quick-starter-text {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-color);
+            line-height: 1.4;
+        }
+
+        /* Modern input area */
+        .chat-input-area {
+            padding: 14px 20px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            background-color: rgba(9, 10, 20, 0.6);
+        }
+
+        .chat-input-wrapper {
+            flex-grow: 1;
+            position: relative;
+        }
+
+        .chat-input {
+            width: 100%;
+            padding: 11px 16px;
+            background-color: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: #ffffff;
+            outline: none;
+            font-family: inherit;
+            font-size: 13px;
+            transition: border-color 0.2s;
+        }
+
+        .chat-input:focus {
+            border-color: var(--primary-color);
+        }
+
+        /* Bouncing dots loader */
+        .loader-dots {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 2px 6px;
+        }
+
+        .loader-dots .dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--text-muted);
+            border-radius: 50%;
+            animation: dot-bounce 1.4s infinite ease-in-out both;
+        }
+
+        .loader-dots .dot:nth-child(1) { animation-delay: -0.32s; }
+        .loader-dots .dot:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes dot-bounce {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1.0); }
+        }
+
+        /* Code block container */
+        .code-container {
+            position: relative;
+            margin: 10px 0;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background-color: #05060b;
+        }
+
+        .code-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 12px;
+            background-color: #0a0b12;
+            font-family: monospace;
+            font-size: 11px;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .copy-button {
+            padding: 2px 6px;
+            background-color: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 10px;
+            transition: all 0.15s;
+        }
+
+        .copy-button:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-hover);
+        }
+
+        .code-container pre {
+            margin: 0;
+            padding: 12px;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 12px;
+            color: #38bdf8;
+            line-height: 1.5;
+        }
+
+        /* Switches */
+        .option-switch {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        }
+
+        .option-switch:last-child {
+            border-bottom: none;
+        }
+
+        .option-switch label {
+            font-size: 12px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 34px;
+            height: 18px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: .2s;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 10px;
+            width: 10px;
+            left: 3px;
+            bottom: 3px;
+            background-color: var(--text-muted);
+            transition: .2s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: var(--primary-color);
+            border-color: var(--primary-hover);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(16px);
+            background-color: white;
+        }
+
+        /* ---------------------------------------------------------
+           Dataset Table Manager Layout
+           --------------------------------------------------------- */
+        .dataset-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        .dataset-table th, .dataset-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .dataset-table th {
+            font-weight: 600;
+            color: var(--text-muted);
+            background-color: rgba(255, 255, 255, 0.015);
+        }
+
+        .dataset-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.008);
+        }
+
+        .badge {
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .badge-raw {
+            background-color: rgba(245, 158, 11, 0.08);
+            color: var(--warning-color);
+            border: 1px solid rgba(245, 158, 11, 0.15);
+        }
+
+        .badge-processed {
+            background-color: rgba(168, 85, 247, 0.08);
+            color: var(--secondary-color);
+            border: 1px solid rgba(168, 85, 247, 0.15);
+        }
+
+        /* Drag & Drop Upload Zone Component */
+        .upload-zone {
+            border: 2px dashed var(--border-color);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+
+        .upload-zone:hover {
+            border-color: var(--primary-color);
+            background-color: rgba(99, 102, 241, 0.02);
+        }
+
+        .upload-text {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .upload-text span {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        /* Console Output styling */
+        .console-area {
+            background-color: #04050a;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px;
+            height: 380px;
+            overflow-y: auto;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 12px;
+            color: #38bdf8;
+            white-space: pre-wrap;
+            line-height: 1.6;
+            box-shadow: inset 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        /* Modal Dialog layout */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 32px;
+            backdrop-filter: blur(4px);
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            width: 85%;
+            max-width: 900px;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+            animation: zoom-in 0.15s ease-out;
+        }
+
+        @keyframes zoom-in {
+            from { transform: scale(0.97); opacity: 0; }
+            to { transform: scale(1.0); opacity: 1; }
+        }
+
+        .modal-header {
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .modal-body {
+            padding: 20px;
+            flex-grow: 1;
+            overflow: auto;
+        }
+
+        .modal-body pre {
+            font-family: 'Consolas', monospace;
+            font-size: 12px;
+            color: var(--text-color);
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 16px;
+            border-radius: 6px;
+            white-space: pre-wrap;
+            border: 1px solid var(--border-color);
+        }
+
+        .modal-footer {
+            padding: 14px 24px;
+            border-top: 1px solid var(--border-color);
+            text-align: right;
+        }
+
+        .close-btn {
+            font-size: 22px;
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: color 0.2s;
+        }
+
+        .close-btn:hover {
+            color: white;
+        }
+
+        /* Two column layout styling */
+        .flex-row {
+            display: flex;
+            gap: 24px;
+        }
+
+        .flex-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .range-value {
+            font-size: 11px;
+            color: var(--primary-color);
+            font-weight: 600;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Menu navigation -->
+    <div class="sidebar">
+        <div class="brand">
+            <div class="brand-logo">S</div>
+            <div class="brand-title">Sudy AI</div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item active" onclick="switchTab('chat', this)">
+                <span>Yapay Zeka Sohbet</span>
+            </li>
+            <li class="nav-item" onclick="switchTab('datasets', this)">
+                <span>Veri Kümeleri</span>
+            </li>
+            <li class="nav-item" onclick="switchTab('training', this)">
+                <span>Model Eğitimi</span>
+            </li>
+            <li class="nav-item" onclick="switchTab('testing', this)">
+                <span>Birim Testleri</span>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            Sudy Türkçe LLM v0.2.0
+        </div>
+    </div>
+
+    <!-- Main Content Panel Workspace -->
+    <div class="main-content">
+        <header class="main-header">
+            <div class="header-left">
+                <button class="btn btn-secondary" onclick="toggleSidebar()" style="padding: 6px 10px; font-size: 12px;">Menü</button>
+                <div class="header-title" id="header-tab-title">Yapay Zeka Sohbet Arayüzü</div>
+            </div>
+            <div class="status-badge" id="global-status">
+                <div class="status-dot"></div>
+                <span id="global-status-text">Sunucu Aktif</span>
+            </div>
+        </header>
+
+        <!-- 1. Yapay Zeka Sohbet Tab Panel -->
+        <div id="panel-chat" class="panel active">
+            <div class="chat-container">
+                <div class="chat-main">
+                    <div class="chat-window-header">
+                        <div class="chat-window-title">Sudy Türkçe Dil Modeli Asistanı</div>
+                        <button class="btn btn-secondary" style="padding: 5px 10px; font-size: 11px;" onclick="clearChatHistory()">Geçmişi Temizle</button>
+                    </div>
+                    
+                    <div class="chat-messages" id="chat-box">
+                        <!-- Quick Starters Prompt Cards displayed when box is empty -->
+                        <div class="quick-starters-container" id="chat-starters">
+                            <div class="quick-starter-card" onclick="selectQuickStarter('türkiye\'nin başkenti neresidir?')">
+                                <div class="quick-starter-text">Türkiye'nin başkenti neresidir?</div>
+                            </div>
+                            <div class="quick-starter-card" onclick="selectQuickStarter('yapay zeka nedir?')">
+                                <div class="quick-starter-text">Yapay zeka nedir?</div>
+                            </div>
+                            <div class="quick-starter-card" onclick="selectQuickStarter('türkçedeki büyük ünlü uyumu kuralını örneklerle açıklar mısın?')">
+                                <div class="quick-starter-text">Büyük Ünlü Uyumu'nu örneklerle açıkla</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-area">
+                        <div class="chat-input-wrapper">
+                            <input type="text" id="chat-msg" class="chat-input" placeholder="Sudy'e Türkçe bir soru sorun..." onkeypress="handleChatEnter(event)">
+                        </div>
+                        <button class="btn" id="chat-send-btn" onclick="sendChatMessage()">Gönder</button>
+                    </div>
+                </div>
+                
+                <!-- Chat Config Sidebar options -->
+                <div class="chat-sidebar">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Çıkarım Seçenekleri</div>
+                        </div>
+                        <div class="option-switch">
+                            <label for="sw-spec">Spekülatif Çıkarım (MTP)</label>
+                            <label class="switch">
+                                <input type="checkbox" id="sw-spec" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="option-switch">
+                            <label for="sw-search">Web Arama (RAG)</label>
+                            <label class="switch">
+                                <input type="checkbox" id="sw-search">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="option-switch">
+                            <label for="sw-quant">Düşük RAM Modu (8-bit)</label>
+                            <label class="switch">
+                                <input type="checkbox" id="sw-quant">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Gelişmiş Ayarlar</div>
+                        </div>
+                        <div class="input-group">
+                            <label for="sl-temp">Sıcaklık (Temperature) <span id="val-temp" class="range-value">0.7</span></label>
+                            <input type="range" id="sl-temp" min="0.0" max="2.0" step="0.1" value="0.7" class="input-control" oninput="updateRangeLabel('temp', this.value)">
+                        </div>
+                        <div class="input-group">
+                            <label for="sl-tokens">Maksimum Yeni Token <span id="val-tokens" class="range-value">120</span></label>
+                            <input type="range" id="sl-tokens" min="10" max="512" step="10" value="120" class="input-control" oninput="updateRangeLabel('tokens', this.value)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Veri Kümeleri Tab Panel -->
+        <div id="panel-datasets" class="panel">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Yeni Veri Kümesi Yükle</div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-col" style="flex: 3;">
+                        <div class="upload-zone" onclick="document.getElementById('file-upload').click()">
+                            <div class="upload-text">Dosya yüklemek için tıklayın veya sürükleyip bırakın<br><span>(.txt, .json, .csv desteklenir)</span></div>
+                            <input type="file" id="file-upload" class="hidden" onchange="uploadDatasetFile(this.files[0])">
+                        </div>
+                    </div>
+                    <div class="flex-col" style="flex: 1;">
+                        <div class="input-group">
+                            <label for="upload-target">Yükleme Hedefi</label>
+                            <select id="upload-target" class="input-control">
+                                <option value="raw">data/raw (Temizlenmemiş Veri)</option>
+                                <option value="processed">data/processed (Eğitim Verisi)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">HuggingFace Üzerinden Veri Kümesi İndir</div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-col" style="flex: 2;">
+                        <div class="input-group">
+                            <label for="hf-repo-id">HuggingFace Repo ID</label>
+                            <input type="text" id="hf-repo-id" class="input-control" placeholder="Örnek: Loodos/turkish-colloquial-phrases veya boun-tabi-LMG/turkish-instructions">
+                        </div>
+                    </div>
+                    <div class="flex-col" style="flex: 1;">
+                        <div class="input-group">
+                            <label for="hf-split">Veri Kümesi Ayrımı (Split)</label>
+                            <input type="text" id="hf-split" class="input-control" value="train">
+                        </div>
+                    </div>
+                    <div class="flex-col" style="flex: 1;">
+                        <div class="input-group">
+                            <label for="hf-type">Görev Türü (Type)</label>
+                            <select id="hf-type" class="input-control">
+                                <option value="sft">İnce Ayar (SFT JSON)</option>
+                                <option value="pretrain">Causal Ön Eğitim (Pretrain TXT)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex-col" style="flex: 1;">
+                        <div class="input-group">
+                            <label for="hf-limit">Satır Sınırı (Limit)</label>
+                            <input type="number" id="hf-limit" class="input-control" value="5000">
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 10px;">
+                    <button class="btn" onclick="downloadHFDataset()">İndirmeyi Başlat</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Sistemdeki Veri Kümeleri</div>
+                </div>
+                <table class="dataset-table">
+                    <thead>
+                        <tr>
+                            <th>Dosya Adı</th>
+                            <th>Kategori</th>
+                            <th>Boyut</th>
+                            <th>Dosya Yolu</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataset-list-body">
+                        <!-- Loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 3. Model Eğitimi Tab Panel -->
+        <div id="panel-training" class="panel">
+            <div class="flex-row">
+                <div class="flex-col" style="flex: 1;">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Eğitim Yapılandırması</div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="train-task">Eğitim Türü</label>
+                            <select id="train-task" class="input-control" onchange="toggleTrainingTaskFields(this.value)">
+                                <option value="setup">Veri Kurulumu & Tokenizer Eğitimi (Setup)</option>
+                                <option value="pretrain">Causal Ön Eğitim (Pre-training)</option>
+                                <option value="sft">Denetimli İnce Ayar (SFT)</option>
+                                <option value="rlhf">GRPO Pekiştirmeli Öğrenme (RLHF Alignment)</option>
+                                <option value="crawltrain">Otomatik Link Taraması ve İnce Ayar (Auto Crawl & Train)</option>
+                                <option value="autocrawl">Otonom İnternet Taraması ve Veri Toplama (Autonomous Web Crawl)</option>
+                            </select>
+                        </div>
+
+                        <!-- Form fields dynamically toggled -->
+                        <div id="group-setup-fields">
+                            <div class="input-group">
+                                <label for="param-vocab">Tokenizer Vocab Boyutu</label>
+                                <input type="number" id="param-vocab" class="input-control" value="1000">
+                            </div>
+                        </div>
+
+                        <div id="group-train-fields" class="hidden">
+                            <div class="input-group">
+                                <label for="param-epochs">Eğitim Epoch Sayısı</label>
+                                <input type="number" id="param-epochs" class="input-control" value="2">
+                            </div>
+                            <div class="input-group">
+                                <label for="param-batch">Batch Boyutu (Batch Size)</label>
+                                <input type="number" id="param-batch" class="input-control" value="2">
+                            </div>
+                            <div class="input-group">
+                                <label for="param-lr">Öğrenme Oranı (Learning Rate)</label>
+                                <input type="text" id="param-lr" class="input-control" value="3e-4">
+                            </div>
+                        </div>
+
+                        <div id="group-rlhf-fields" class="hidden">
+                            <div class="input-group">
+                                <label for="param-group-size">GRPO Group Size (G)</label>
+                                <input type="number" id="param-group-size" class="input-control" value="4">
+                            </div>
+                        </div>
+
+                        <div id="group-url-fields" class="hidden">
+                            <div class="input-group">
+                                <label for="param-urls">Taranacak URL'ler veya Arama Terimleri (Toplu linkler için virgülle ayırın)</label>
+                                <textarea id="param-urls" class="input-control" rows="4" placeholder="Örnek link: https://tr.wikipedia.org/wiki/Yapay_zeka&#10;Örnek terim: yapay zeka alanındaki son gelişmeler"></textarea>
+                            </div>
+                        </div>
+
+                        <div id="group-local-dataset-fields" class="hidden">
+                            <div class="input-group">
+                                <label for="param-data-path">Eğitim İçin Yerel Dosya Seçin (data/processed/)</label>
+                                <select id="param-data-path" class="input-control">
+                                    <!-- Loaded dynamically from /api/datasets -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 12px; margin-top: 24px;">
+                            <button class="btn" id="btn-start-train" onclick="startTraining()">Eğitimi Başlat</button>
+                            <button class="btn btn-danger hidden" id="btn-stop-train" onclick="stopTraining()">İşlemi Durdur</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-col" style="flex: 2;">
+                    <div class="card" style="height: 100%;">
+                        <div class="card-header">
+                            <div class="card-title">Gerçek Zamanlı Log Konsolu <span id="train-indicator" style="margin-left: 8px; font-weight: normal; font-size: 12px; color: var(--text-muted);"></span></div>
+                        </div>
+                        <div class="console-area" id="train-console">Lütfen sol panelden bir eğitim işlemi başlatın...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Birim Testleri Tab Panel -->
+        <div id="panel-testing" class="panel">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">pytest Birim Testleri</div>
+                </div>
+                <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
+                    Model mimarisini, tokenizer morfolojik analizlerini, çıkarım API uç noktalarını ve veri yükleyicilerini test eden 23 adet pytest birim testini çalıştırabilirsiniz.
+                </p>
+                <div style="display: flex; gap: 12px; margin-bottom: 24px;">
+                    <button class="btn" id="btn-start-test" onclick="runUnitTests()">Testleri Çalıştır</button>
+                    <button class="btn btn-danger hidden" id="btn-stop-test" onclick="stopTraining()">Durdur</button>
+                </div>
+                
+                <div class="console-area" id="test-console" style="height: calc(100vh - 300px);">Testleri koşturmak için butona tıklayın...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- View modal -->
+    <div class="modal" id="view-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="view-modal-title">Dosya Önizleme</div>
+                <div class="close-btn" onclick="closeViewModal()">&times;</div>
+            </div>
+            <div class="modal-body">
+                <pre id="view-modal-content">Yükleniyor...</pre>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeViewModal()">Kapat</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel Javascript logic -->
+    <script>
+        let currentTabId = 'chat';
+        let logPollInterval = null;
+        let lastLogIdx = 0;
+        let runningStatusInterval = null;
+
+        // Auto load and synchronise logs state on load
+        window.addEventListener('load', () => {
+            loadDatasets();
+            checkRunningProcessStatus();
+            runningStatusInterval = setInterval(checkRunningProcessStatus, 3000);
+        });
+
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('collapsed');
+        }
+
+        function switchTab(tabId, el) {
+            currentTabId = tabId;
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+            el.classList.add('active');
+
+            document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+            document.getElementById(`panel-${tabId}`).classList.add('active');
+
+            const titleMap = {
+                'chat': 'Yapay Zeka Sohbet Arayüzü',
+                'datasets': 'Veri Kümeleri Yönetimi',
+                'training': 'Model Eğitim Merkezi',
+                'testing': 'pytest Birim Testleri'
+            };
+            document.getElementById('header-tab-title').innerText = titleMap[tabId] || 'Panel';
+
+            if (tabId === 'datasets') {
+                loadDatasets();
+            } else if (tabId === 'training') {
+                loadDatasetsForTrainingConfig();
+            }
+        }
+
+        function updateRangeLabel(type, val) {
+            document.getElementById(`val-${type}`).innerText = val;
+        }
+
+        function toggleTrainingTaskFields(task) {
+            const setupGroup = document.getElementById('group-setup-fields');
+            const trainGroup = document.getElementById('group-train-fields');
+            const rlhfGroup = document.getElementById('group-rlhf-fields');
+            const urlGroup = document.getElementById('group-url-fields');
+            const localGroup = document.getElementById('group-local-dataset-fields');
+
+            setupGroup.classList.add('hidden');
+            trainGroup.classList.add('hidden');
+            rlhfGroup.classList.add('hidden');
+            urlGroup.classList.add('hidden');
+            localGroup.classList.add('hidden');
+
+            if (task === 'setup') {
+                setupGroup.classList.remove('hidden');
+            } else if (task === 'pretrain') {
+                trainGroup.classList.remove('hidden');
+                localGroup.classList.remove('hidden');
+                document.getElementById('param-lr').value = '3e-4';
+            } else if (task === 'sft') {
+                trainGroup.classList.remove('hidden');
+                localGroup.classList.remove('hidden');
+                document.getElementById('param-lr').value = '5e-5';
+            } else if (task === 'rlhf') {
+                trainGroup.classList.remove('hidden');
+                rlhfGroup.classList.remove('hidden');
+                document.getElementById('param-lr').value = '1e-6';
+            } else if (task === 'crawltrain') {
+                trainGroup.classList.remove('hidden');
+                urlGroup.classList.remove('hidden');
+                document.getElementById('param-lr').value = '5e-5';
+                document.getElementById('param-urls').placeholder = "Örnek linkler: https://tr.wikipedia.org/wiki/Yapay_zeka, https://tr.wikipedia.org/wiki/Derin_ogrenme";
+            } else if (task === 'autocrawl') {
+                urlGroup.classList.remove('hidden');
+                document.getElementById('param-urls').placeholder = "Örnek arama terimi: yapay zeka alanındaki son gelişmeler";
+            }
+        }
+
+        // Fetch datasets and populate training config selects
+        async function loadDatasetsForTrainingConfig() {
+            try {
+                const response = await fetch('/api/datasets');
+                const datasets = await response.json();
+                const select = document.getElementById('param-data-path');
+                select.innerHTML = '';
+                
+                datasets.forEach(data => {
+                    const opt = document.createElement('option');
+                    opt.value = data.path;
+                    opt.innerText = `${data.name} (${data.category === 'raw' ? 'Ham' : 'İşlenmiş'})`;
+                    select.appendChild(opt);
+                });
+            } catch (e) {
+                console.error("Failed to load select datasets:", e);
+            }
+        }
+
+        // ---------------------------------------------------------
+        // Chat View Logic
+        // ---------------------------------------------------------
+        function handleChatEnter(event) {
+            if (event.key === 'Enter') {
+                sendChatMessage();
+            }
+        }
+
+        function selectQuickStarter(promptText) {
+            document.getElementById('chat-msg').value = promptText;
+            sendChatMessage();
+        }
+
+        function clearChatHistory() {
+            const chatBox = document.getElementById('chat-box');
+            chatBox.innerHTML = `
+                <div class="quick-starters-container" id="chat-starters">
+                    <div class="quick-starter-card" onclick="selectQuickStarter('türkiye\\\'nin başkenti neresidir?')">
+                        <div class="quick-starter-text">Türkiye'nin başkenti neresidir?</div>
+                    </div>
+                    <div class="quick-starter-card" onclick="selectQuickStarter('yapay zeka nedir?')">
+                        <div class="quick-starter-text">Yapay zeka nedir?</div>
+                    </div>
+                    <div class="quick-starter-card" onclick="selectQuickStarter('türkçedeki büyük ünlü uyumu kuralını örneklerle açıklar mısın?')">
+                        <div class="quick-starter-text">Büyük Ünlü Uyumu'nu örneklerle açıkla</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function copyCodeToClipboard(btn, text) {
+            navigator.clipboard.writeText(text).then(() => {
+                btn.innerText = "Kopyalandı!";
+                setTimeout(() => btn.innerText = "Kopyala", 2000);
+            }).catch(err => {
+                console.error("Code copy failed:", err);
+            });
+        }
+
+        function formatMessageText(text) {
+            const codeBlockRegex = /```(\w*)\n([\s\S]*?)```/g;
+            let formatted = text;
+            let match;
+            
+            while ((match = codeBlockRegex.exec(text)) !== null) {
+                const lang = match[1] || 'code';
+                const code = match[2];
+                const escapedCode = code.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                
+                const codeHtml = `
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>${lang.toUpperCase()}</span>
+                            <button class="copy-button" onclick="copyCodeToClipboard(this, \`${code.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`)">Kopyala</button>
+                        </div>
+                        <pre><code>${escapedCode}</code></pre>
+                    </div>
+                `;
+                formatted = formatted.replace(match[0], codeHtml);
+            }
+            return formatted;
+        }
+
+        async function sendChatMessage() {
+            const input = document.getElementById('chat-msg');
+            const message = input.value.trim();
+            if (!message) return;
+
+            input.value = '';
+            
+            const chatBox = document.getElementById('chat-box');
+            const starters = document.getElementById('chat-starters');
+            if (starters) starters.remove();
+
+            const userBubble = document.createElement('div');
+            userBubble.className = 'message-bubble user';
+            userBubble.innerText = message;
+            chatBox.appendChild(userBubble);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            const assistantBubble = document.createElement('div');
+            assistantBubble.className = 'message-bubble assistant';
+            assistantBubble.innerHTML = `
+                <div class="loader-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            `;
+            chatBox.appendChild(assistantBubble);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            const useSpeculative = document.getElementById('sw-spec').checked;
+            const webSearch = document.getElementById('sw-search').checked;
+            const quantize = document.getElementById('sw-quant').checked;
+            const temperature = parseFloat(document.getElementById('sl-temp').value);
+            const maxNewTokens = parseInt(document.getElementById('sl-tokens').value);
+
+            const payload = {
+                prompt: message,
+                max_new_tokens: maxNewTokens,
+                temperature: temperature,
+                top_k: 40,
+                stream: true,
+                use_speculative: useSpeculative,
+                mtp_threshold: 0.7,
+                web_search: webSearch
+            };
+
+            let accumulatedText = "";
+
+            try {
+                const response = await fetch('/generate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const errData = await response.json();
+                    assistantBubble.innerText = `Hata: ${errData.detail || 'İstek başarısız oldu.'}`;
+                    assistantBubble.classList.add('error');
+                    return;
+                }
+
+                assistantBubble.innerHTML = '';
+                
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder('utf-8');
+                let buffer = '';
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+
+                    buffer += decoder.decode(value, { stream: true });
+                    const lines = buffer.split('\n');
+                    buffer = lines.pop();
+
+                    for (const line of lines) {
+                        const cleanLine = line.trim();
+                        if (cleanLine.startsWith('data: ')) {
+                            const dataText = cleanLine.substring(6);
+                            if (dataText === '[DONE]') {
+                                break;
+                            }
+                            try {
+                                const parsed = JSON.parse(dataText);
+                                if (parsed.error) {
+                                    assistantBubble.innerText = parsed.error;
+                                    assistantBubble.classList.add('error');
+                                    break;
+                                }
+                                const token = parsed.token || '';
+                                accumulatedText += token;
+                                assistantBubble.innerHTML = formatMessageText(accumulatedText);
+                                chatBox.scrollTop = chatBox.scrollHeight;
+                            } catch (e) {}
+                        }
+                    }
+                }
+            } catch (error) {
+                assistantBubble.innerText = `Hata: Bağlantı koptu.`;
+                assistantBubble.classList.add('error');
+            }
+        }
+
+        // ---------------------------------------------------------
+        // Dataset File Operations
+        // ---------------------------------------------------------
+        async function loadDatasets() {
+            try {
+                const response = await fetch('/api/datasets');
+                const datasets = await response.json();
+
+                const tbody = document.getElementById('dataset-list-body');
+                tbody.innerHTML = '';
+
+                if (datasets.length === 0) {
+                    tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--text-muted); padding: 20px;">Sistemde veri kümesi bulunmamaktadır.</td></tr>`;
+                    return;
+                }
+
+                datasets.forEach(data => {
+                    const tr = document.createElement('tr');
+                    
+                    let sizeStr = `${(data.size / 1024).toFixed(1)} KB`;
+                    if (data.size > 1024 * 1024) {
+                        sizeStr = `${(data.size / (1024 * 1024)).toFixed(1)} MB`;
+                    }
+
+                    tr.innerHTML = `
+                        <td style="font-weight: 600; color: #ffffff;">${data.name}</td>
+                        <td><span class="badge badge-${data.category}">${data.category === 'raw' ? 'Ham Veri' : 'İşlenmiş'}</span></td>
+                        <td>${sizeStr}</td>
+                        <td style="font-family: monospace; font-size: 11px; color: var(--text-muted);">${data.path}</td>
+                        <td>
+                            <div style="display: flex; gap: 6px;">
+                                <button class="btn btn-secondary" style="padding: 5px 8px; font-size: 11px;" onclick="viewDatasetContent('${data.path}', '${data.name}')">İncele</button>
+                                <button class="btn btn-danger" style="padding: 5px 8px; font-size: 11px;" onclick="deleteDatasetFile('${data.path}')">Sil</button>
+                            </div>
+                        </td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            } catch (error) {
+                console.error("Failed to load datasets:", error);
+            }
+        }
+
+        async function viewDatasetContent(path, name) {
+            const modal = document.getElementById('view-modal');
+            const modalTitle = document.getElementById('view-modal-title');
+            const modalContent = document.getElementById('view-modal-content');
+
+            modalTitle.innerText = `${name} - Önizleme (İlk 100 satır)`;
+            modalContent.innerText = "Yükleniyor...";
+            modal.classList.add('active');
+
+            try {
+                const response = await fetch(`/api/datasets/view?path=${encodeURIComponent(path)}`);
+                if (response.ok) {
+                    const data = await response.json();
+                    modalContent.innerText = data.content;
+                } else {
+                    const err = await response.json();
+                    modalContent.innerText = `Hata: ${err.detail || 'İçerik okunamadı.'}`;
+                }
+            } catch (error) {
+                modalContent.innerText = `Hata: Sunucu bağlantı hatası.`;
+            }
+        }
+
+        function closeViewModal() {
+            document.getElementById('view-modal').classList.remove('active');
+        }
+
+        async function deleteDatasetFile(path) {
+            if (!confirm(`Bu dosyayı silmek istediğinize emin misiniz?\n-> ${path}`)) {
+                return;
+            }
+            try {
+                const response = await fetch(`/api/datasets?path=${encodeURIComponent(path)}`, {
+                    method: 'DELETE'
+                });
+                if (response.ok) {
+                    loadDatasets();
+                } else {
+                    const err = await response.json();
+                    alert(`Hata: ${err.detail || 'Dosya silinemedi.'}`);
+                }
+            } catch (error) {
+                alert("Hata: Bağlantı hatası.");
+            }
+        }
+
+        async function uploadDatasetFile(file) {
+            if (!file) return;
+
+            const category = document.getElementById('upload-target').value;
+            const formData = new FormData();
+            formData.append('file', file);
+
+            const tbody = document.getElementById('dataset-list-body');
+            tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--primary-color); padding: 20px;">Yükleniyor, lütfen bekleyin...</td></tr>`;
+
+            try {
+                const response = await fetch(`/api/datasets/upload?category=${category}`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    alert(result.message);
+                } else {
+                    const err = await response.json();
+                    alert(`Hata: ${err.detail || 'Dosya yüklenemedi.'}`);
+                }
+                loadDatasets();
+            } catch (error) {
+                alert("Hata: Sunucu bağlantı hatası.");
+                loadDatasets();
+            }
+        }
+
+        async function downloadHFDataset() {
+            const repoId = document.getElementById('hf-repo-id').value.trim();
+            const split = document.getElementById('hf-split').value.trim();
+            const type = document.getElementById('hf-type').value;
+            const limit = parseInt(document.getElementById('hf-limit').value) || 5000;
+
+            if (!repoId) {
+                alert("Lütfen bir HuggingFace Repo ID girin.");
+                return;
+            }
+
+            const payload = {
+                repo_id: repoId,
+                split: split,
+                type: type,
+                limit: limit
+            };
+
+            alert("HuggingFace indirme görevi arka planda başlatılıyor. Log konsolundan takip edebilirsiniz.");
+            
+            try {
+                const response = await fetch('/api/datasets/download_hf', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (response.ok) {
+                    const trainingTabEl = document.querySelector('.nav-list li:nth-child(3)');
+                    switchTab('training', trainingTabEl);
+                } else {
+                    const err = await response.json();
+                    alert(`Hata: ${err.detail || 'İndirme başlatılamadı.'}`);
+                }
+            } catch (error) {
+                alert("Hata: Sunucu bağlantı hatası.");
+            }
+        }
+
+        // ---------------------------------------------------------
+        // Real-Time Log Polling Logic
+        // ---------------------------------------------------------
+        function startPollingLogs(consoleType) {
+            if (logPollInterval) {
+                clearInterval(logPollInterval);
+            }
+            
+            lastLogIdx = 0;
+            const consoleElement = document.getElementById(consoleType === 'train' ? 'train-console' : 'test-console');
+            consoleElement.innerText = '[BAŞLATILDI] İşlem logları yükleniyor...\n';
+
+            logPollInterval = setInterval(async () => {
+                try {
+                    const response = await fetch(`/api/train/logs?last_idx=${lastLogIdx}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        
+                        if (data.logs.length > 0) {
+                            data.logs.forEach(line => {
+                                consoleElement.innerText += line;
+                            });
+                            lastLogIdx = data.next_idx;
+                            consoleElement.scrollTop = consoleElement.scrollHeight;
+                        }
+
+                        const processCompleted = data.logs.some(line => line.includes('[PROCESS_COMPLETED'));
+                        if (processCompleted || (!data.running && data.logs.length === 0 && lastLogIdx > 0)) {
+                            clearInterval(logPollInterval);
+                            logPollInterval = null;
+                            resetControlPanelUI();
+                        }
+                    }
+                } catch (e) {
+                    console.error("Logs polling error:", e);
+                }
+            }, 1000);
+        }
+
+        async function startTraining() {
+            const task = document.getElementById('train-task').value;
+            const epochs = parseInt(document.getElementById('param-epochs').value) || 2;
+            const batchSize = parseInt(document.getElementById('param-batch').value) || 2;
+            const lr = parseFloat(document.getElementById('param-lr').value) || 3e-4;
+            const vocabSize = parseInt(document.getElementById('param-vocab').value) || 1000;
+            const groupSize = parseInt(document.getElementById('param-group-size').value) || 4;
+            
+            const urls = document.getElementById('param-urls').value.trim();
+            const dataPath = document.getElementById('param-data-path').value;
+
+            const payload = {
+                task: task,
+                epochs: epochs,
+                batch_size: batchSize,
+                lr: lr,
+                vocab_size: vocabSize,
+                group_size: groupSize,
+                urls: urls ? urls : null,
+                data_path: dataPath ? dataPath : null
+            };
+
+            const consoleElement = document.getElementById('train-console');
+            consoleElement.innerText = "İşlem başlatılıyor...";
+            
+            try {
+                const response = await fetch('/api/train', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (response.ok) {
+                    document.getElementById('btn-start-train').classList.add('hidden');
+                    document.getElementById('btn-stop-train').classList.remove('hidden');
+                    document.getElementById('train-indicator').innerText = "(Aktif işlem çalışıyor)";
+                    startPollingLogs('train');
+                } else {
+                    const err = await response.json();
+                    consoleElement.innerText = `Hata: ${err.detail || 'Eğitim başlatılamadı.'}`;
+                }
+            } catch (error) {
+                consoleElement.innerText = `Hata: Sunucu bağlantı hatası.`;
+            }
+        }
+
+        async function stopTraining() {
+            try {
+                const response = await fetch('/api/train/stop', { method: 'POST' });
+                if (response.ok) {
+                    if (logPollInterval) {
+                        clearInterval(logPollInterval);
+                        logPollInterval = null;
+                    }
+                    resetControlPanelUI();
+                }
+            } catch (error) {
+                console.error("Failed to stop process:", error);
+            }
+        }
+
+        async function runUnitTests() {
+            const consoleElement = document.getElementById('test-console');
+            consoleElement.innerText = "pytest testleri tetikleniyor...";
+            
+            try {
+                const response = await fetch('/api/test', { method: 'POST' });
+                if (response.ok) {
+                    document.getElementById('btn-start-test').classList.add('hidden');
+                    document.getElementById('btn-stop-test').classList.remove('hidden');
+                    startPollingLogs('test');
+                } else {
+                    const err = await response.json();
+                    consoleElement.innerText = `Hata: ${err.detail || 'Testler koşturulamadı.'}`;
+                }
+            } catch (error) {
+                consoleElement.innerText = `Hata: Sunucu bağlantı hatası.`;
+            }
+        }
+
+        function resetControlPanelUI() {
+            document.getElementById('btn-start-train').classList.remove('hidden');
+            document.getElementById('btn-stop-train').classList.add('hidden');
+            document.getElementById('btn-start-test').classList.remove('hidden');
+            document.getElementById('btn-stop-test').classList.add('hidden');
+            document.getElementById('train-indicator').innerText = "";
+        }
+
+        async function checkRunningProcessStatus() {
+            try {
+                const response = await fetch('/api/train/status');
+                const data = await response.json();
+
+                const statusDot = document.querySelector('.status-dot');
+                const statusText = document.getElementById('global-status-text');
+
+                if (data.running) {
+                    statusDot.style.backgroundColor = 'var(--warning-color)';
+                    document.getElementById('global-status').style.borderColor = 'var(--warning-color)';
+                    document.getElementById('global-status').style.color = 'var(--warning-color)';
+                    statusText.innerText = `Çalışıyor: ${data.task}`;
+                    
+                    if (data.task.includes("Testing")) {
+                        document.getElementById('btn-start-test').classList.add('hidden');
+                        document.getElementById('btn-stop-test').classList.remove('hidden');
+                        if (!logPollInterval) {
+                            startPollingLogs('test');
+                        }
+                    } else {
+                        document.getElementById('btn-start-train').classList.add('hidden');
+                        document.getElementById('btn-stop-train').classList.remove('hidden');
+                        document.getElementById('train-indicator').innerText = `(${data.task})`;
+                        if (!logPollInterval) {
+                            startPollingLogs('train');
+                        }
+                    }
+                } else {
+                    statusDot.style.backgroundColor = 'var(--success-color)';
+                    document.getElementById('global-status').style.borderColor = 'var(--success-color)';
+                    document.getElementById('global-status').style.color = 'var(--success-color)';
+                    statusText.innerText = "Sunucu Aktif";
+                    
+                    if (!logPollInterval && document.getElementById('btn-start-train').classList.contains('hidden')) {
+                        resetControlPanelUI();
+                    }
+                }
+            } catch (error) {
+                console.error("Failed to check status:", error);
+            }
+        }
+    </script>
+</body>
+</html>

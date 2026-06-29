@@ -1,0 +1,77 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTest
+.pytest_cache/
+.pytest/
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+env/
+active_env/
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Project specific ignores
+# Ignore all model checkpoints and pytorch weights
+checkpoints/
+# But DO NOT ignore the tokenizer configs since they are required to boot the model
+!checkpoints/sudy-tokenizer/
+
+# Ignore large/dynamic datasets and crawls
+data/raw/*
+!data/raw/turkish_sample.txt
+
+data/processed/*
+# Keep starter datasets
+!data/processed/sudy_pretrain_starter.txt
+!data/processed/sudy_sft_starter.json
+!data/processed/turkish_processed.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db

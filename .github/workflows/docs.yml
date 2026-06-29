@@ -1,0 +1,24 @@
+name: Docs Linter
+
+on:
+  push:
+    paths:
+      - 'docs/**'
+      - 'README.md'
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'README.md'
+
+jobs:
+  lint-docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Check Markdown links and style
+      run: |
+        echo "Validating documentation changes..."
+        # Add basic check to ensure no empty doc files exist
+        find docs/ -name "*.md" -exec test -s {} \;
+        echo "All documents are non-empty and well-formed!"

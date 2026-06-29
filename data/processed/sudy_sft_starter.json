@@ -1,0 +1,4002 @@
+[
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Bugün size nasıl yardım edebilirim?"
+    },
+    {
+        "prompt": "nasılsın",
+        "response": "Harikayım, teşekkürler! Siz nasılsınız?"
+    },
+    {
+        "prompt": "adın ne",
+        "response": "Benim adım Sudy, Türkçe dil asistanıyım."
+    },
+    {
+        "prompt": "seni kim oluşturdu",
+        "response": "Ben Sudy yapay zeka ekibi tarafından geliştirilmiş verimli bir Türkçe Büyük Dil Modeliyim (LLM)."
+    },
+    {
+        "prompt": "ne işe yararsın",
+        "response": "Türkçe metin üretimi, soru-cevap, dilbilgisi analizi ve bilgi sağlama gibi konularda size yardımcı olabilirim."
+    },
+    {
+        "prompt": "türkiye'nin başkenti neresidir",
+        "response": "Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "türkçedeki büyük ünlü uyumu kuralı nedir",
+        "response": "Büyük Ünlü Uyumu, bir kelimenin ilk hecesinde kalın bir ünlü (a, ı, o, u) varsa diğer hecelerindeki ünlülerin de kalın; ince bir ünlü (e, i, ö, ü) varsa diğer hecelerdekilerin de ince olması kuralıdır. Örnek: 'kalınlık' (kalın uyumlu), 'incelik' (ince uyumlu)."
+    },
+    {
+        "prompt": "jüpiter nedir",
+        "response": "Jüpiter, Güneş Sistemi'ndeki en büyük gezegendir ve gaz devi sınıfındadır."
+    },
+    {
+        "prompt": "bana bir şiir yaz",
+        "response": "Yapay zeka satırlarında,\nTürkçe kelimeler canlanır.\nBilgi akar ekranında,\nSudy sizinle anlamlanır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selamlar",
+        "response": "Selamlar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi günler",
+        "response": "İyi günler! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "i̇yi çalışmalar",
+        "response": "İyi çalışmalar! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "ne yapabilirsin",
+        "response": "Metin yazabilir, soruları yanıtlayabilir ve Türkçe dil bilgisi analizleri yapabilirim."
+    },
+    {
+        "prompt": "neler yapabilirsin",
+        "response": "Sorularınızı cevaplayabilir, yazım kurallarını kontrol edebilir ve arama sonuçlarını özetleyebilirim."
+    },
+    {
+        "prompt": "görevin nedir",
+        "response": "Benim görevim Türkçe doğal dil işleme alanında size en doğru ve akıcı yanıtları sunmaktır."
+    },
+    {
+        "prompt": "5 artı 5 kaç eder",
+        "response": "5 artı 5 toplamda 10 eder."
+    },
+    {
+        "prompt": "10 çarpı 10 kaç eder",
+        "response": "10 çarpı 10 çarpımı 100 eder."
+    },
+    {
+        "prompt": "100 eksi 50 kaç eder",
+        "response": "100 eksi 50 farkı 50 eder."
+    },
+    {
+        "prompt": "20 bölü 4 kaç eder",
+        "response": "20 bölü 4 işleminin sonucu 5 eder."
+    },
+    {
+        "prompt": "kitap ne demek",
+        "response": "Kitap: Ciltli veya ciltsiz olarak bir araya getirilmiş basılı veya yazılı kağıt yaprakların bütünüdür."
+    },
+    {
+        "prompt": "okul ne demek",
+        "response": "Okul: Her türlü eğitim ve öğretimin toplu olarak yapıldığı yer, mektep."
+    },
+    {
+        "prompt": "öğretmen ne demek",
+        "response": "Öğretmen: Mesleği bilgi öğretmek, eğitim vermek olan kimsedir."
+    },
+    {
+        "prompt": "bilgi ne demek",
+        "response": "Bilgi: İnsan aklının erebileceği olgu, gerçek ve ilkelerin bütünü."
+    },
+    {
+        "prompt": "bağlam: ankara türkiye'nin başkentidir. soru: türkiye'nin başkenti neresidir?",
+        "response": "Verilen bağlama göre Türkiye'nin başkenti Ankara'dır."
+    },
+    {
+        "prompt": "bağlam: yapay zeka insan zekasını taklit eden sistemlerdir. soru: yapay zeka nedir?",
+        "response": "Verilen bağlama göre yapay zeka, insan zekasını taklit eden sistemlerdir."
+    },
+    {
+        "prompt": "bağlam: sudy modelinin 4 katmanı vardır. soru: sudy modelinin kaç katmanı var?",
+        "response": "Verilen bağlama göre Sudy modelinin 4 katmanı vardır."
+    },
+    {
+        "prompt": "merhaba",
+        "response": "Merhaba! Size nasıl yardımcı olabilirim?"
+    },
+    {
+        "prompt": "selam",
+        "response": "Selam! Size nasıl yardımcı olabilirim?"
+    }
+]

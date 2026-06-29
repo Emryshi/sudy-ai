@@ -1,0 +1,14 @@
+# Sudy SFT Yapılandırması
+hidden_size: 256
+num_hidden_layers: 4
+num_attention_heads: 4
+d_latent: 64
+num_experts: 4
+num_shared_experts: 1
+top_k: 1
+num_mtp_heads: 2
+max_position_embeddings: 512
+initializer_range: 0.02
+rms_norm_eps: 1e-6
+moe_aux_loss_coef: 0.001
+rope_theta: 10000.0
